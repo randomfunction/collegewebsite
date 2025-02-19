@@ -4,7 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronRight, Menu, Search, X } from "lucide-react"
-
+import Image from 'next/image';
 const mainNavItems = [
   {
     title: "Academics",
@@ -58,8 +58,8 @@ export function MainNav() {
       <header className="fixed top-0 z-50 w-full bg-white border-b">
         <div className="container flex items-center justify-between h-16 px-4">
           <Link href="/" className="flex items-center space-x-2">
-            <img
-              src="https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding/harvard-logo.svg"
+            <Image
+              src="https://www.harvard.edu/wp-content/themes/core/assets/Image/theme/branding/harvard-logo.svg"
               alt="Harvard Logo"
               className="h-8"
             />

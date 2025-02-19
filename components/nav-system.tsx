@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, X, ChevronRight } from "lucide-react";
-
+import Image from 'next/image';
 // Sample navigation data with images
 const navigationData = {
   Academics: {
@@ -337,10 +337,12 @@ export function NavSystem() {
         {/* Header */}
         <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
           <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-            <img
-              src="https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding/harvard-logo-white.png"
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/en/f/f5/Indian_Institute_of_Information_Technology%2C_Nagpur_Logo.svg"
               alt="Harvard Logo"
               className="h-8"
+              width={100}
+              height={100}
             />
             <div className="relative w-64">
               <input
