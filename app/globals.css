@@ -3,25 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --crimson: 348 83% 47%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.text-crimson-500 {
+  color: hsl(var(--crimson));
+}
+
+.bg-crimson-500 {
+  background-color: hsl(var(--crimson));
+}
+
+.ring-crimson-500 {
+  --tw-ring-color: hsl(var(--crimson));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .transition-background {
+    transition-property: background-image;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
   }
 }
+
