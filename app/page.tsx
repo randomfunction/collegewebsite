@@ -7,6 +7,8 @@ import ForCompanies from "./components/ForCompanies";
 import { ForStudents } from "./components/ForStudents";
 import InternshipProgram from "./components/InternshipProgram";
 import { ContactTP } from "./components/ContactTP";
+import AcademicEvents from "./components/AcademicEvents";
+
 
 
 export default function Home() {
@@ -22,6 +24,7 @@ export default function Home() {
       <InternshipProgram />
       <ContactTP /> */
       {/* <Footer /> */}
+      <AcademicEvents/>
     </div>
   );
 }

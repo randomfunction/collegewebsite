@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative h-screen flex flex-col justify-center items-center text-center px-6 
-      bg-[url('/public/images/hero-bg.png')] bg-cover bg-center"
+      bg-[url('/hero-bg.png')] bg-cover bg-center"
       
     >
       {/* Gradient Overlay for Fading Effect */}
