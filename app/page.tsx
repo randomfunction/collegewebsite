@@ -1,8 +1,10 @@
 import AcademicEvents from "./components/AcademicEvents";
 import Admissions from "./components/Admissions/Admisions";
+import Fees from "./components/Admissions/Fees";
 import Formats from "./components/Admissions/Format";
 import Placement from "./components/Placement";
 import Programs from "./components/Programs";
+
 
 
 export default function Home() {
@@ -10,11 +12,12 @@ export default function Home() {
     <div> 
        {/* <Placement/>  */}
       {/* <Admissions/> */}
-      <Formats/>
+      {/* <Formats/> */}
       {/* Programs */}
       {/* <AcademicEvents/> */}
       {/* <Programs/>  */}
       {/* <Doctoral/> */}
+      <Fees/>
     </div>
   );
 }
