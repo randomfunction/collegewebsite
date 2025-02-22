@@ -26,11 +26,12 @@ export function ForStudents() {
   return (
     <div>
       <Card>
+      <h2 className="text-3xl font-semibold ml-6 mx-auto pt-5">For Students</h2>
       <CardHeader>
         <CardTitle className="text-xl font-semibold">Required Documents for Students</CardTitle>
       </CardHeader>
       <CardContent>
-        <table className="w-full border-collapse border border-gray-300 text-left text-sm">
+        <table className="w-full border-collapse border text-black text-left text-sm">
           <thead>
             <tr className="bg-gray-100">
               <th className="border border-gray-300 px-4 py-2">Document Type</th>

@@ -1,12 +1,9 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { Button } from '@/components/ui/button';
-// import { createClient } from '@supabase/supabase-js';
-
-// const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!);
 
 const PlacementStats = () => {
   const batchStats = [
@@ -17,19 +14,16 @@ const PlacementStats = () => {
     { year: 2024, highest: 47, average: 13.25 },
   ];
 
-  const [pdfLinks, setPdfLinks] = useState<{ id: string; title: string; url: string }[]>([]);
-
-  // useEffect(() => {
-  //   const fetchPdfLinks = async () => {
-  //     let { data, error } = await supabase.from('placement_pdfs').select('*');
-  //     if (error) console.error('Error fetching PDFs:', error);
-  //     else setPdfLinks(data);
-  //   };
-  //   fetchPdfLinks();
-  // }, []);
+  const pdfLinks = [
+    // { id: '1', title: 'Placement Report 2020', url: '#' },
+    // { id: '2', title: 'Placement Report 2021', url: '#' },
+    { id: '1', title: 'Placement Report 2022', url: './Placement_stats_2022.pdf' },
+    { id: '2', title: 'Placement Report 2023', url: './placement_stats_2023.pdf' },
+    { id: '3', title: 'Placement Report 2024', url: './Placement_stats_2024.pdf' },
+  ];
 
   return (
-    <div className="space-y-6 p-6 max-w-7xl mx-auto">
+    <div className="space-y-6  p-8  bg-gray-900 text-white relative inset-0 bg-gradient-to-r from-gray-700 to-gray-920 opacity-95">
       {/* Header Stats */}
       <Card>
         <CardHeader>
@@ -52,7 +46,7 @@ const PlacementStats = () => {
       {/* Trends Chart */}
       <Card>
         <CardHeader>
-          <CardTitle>Placement Trends (2020-2024)</CardTitle>
+          <CardTitle>Placement Trends (2022-2024)</CardTitle>
         </CardHeader>
         <CardContent>
           <LineChart width={800} height={250} data={batchStats}>

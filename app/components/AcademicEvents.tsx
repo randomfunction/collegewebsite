@@ -161,14 +161,14 @@ const AcademicEvents = () => {
 
 
   return (
-    <div className="max-w-7xl mx-auto p-6 space-y-8">
+    <div className="py-12 px-6 pb-10 bg-gradient-to-b from-gray-600 to-gray-900 min-h-screen  text-blue-100">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center"
       >
         <h1 className="text-4xl font-bold mb-2">Academic Events</h1>
-        <p className="text-gray-600">Conferences, Workshops, and Certifications</p>
+        <p className="text-blue-100 mb-10">Conferences, Workshops, and Certifications</p>
       </motion.div>
 
       <Tabs defaultValue="ongoing" className="w-full">
