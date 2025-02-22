@@ -48,17 +48,17 @@ export function ForStudents() {
           </tbody>
         </table>
         <div className="mt-6 space-y-4">
-          <Button variant="link" asChild>
+          {/* <Button variant="link" asChild>
             <a className="text-blue-600" href="https://iiitn.ac.in/page/for-students/46/images/tnp/CV-format.docx">📄 CV Format (Click Here)</a>
-          </Button>
+          </Button> */}
           <Button variant="link" asChild>
-            <a className="text-blue-600" href="https://iiitn.ac.in/Downloads/tnp/Placement%20Policy-2021-22.pdf">📜 Placement Policy (Click Here)</a>
+            <a className="text-blue-600" href="Placement Policy-2021-22.pdf">📜 Placement Policy (Click Here)</a>
           </Button>
-          <Button variant="link" asChild>
+          {/* <Button variant="link" asChild>
             <a className="text-blue-600" href="https://iiitn.ac.in/Downloads/tnp/SEMESTER%20INTERNSHIP%20GUIDELINES%20-%20BATCH%202021_2.pdf">📘 Internship Instructions & Evaluation Guidelines (Click Here)</a>
-          </Button>
+          </Button> */}
           <Button variant="link" asChild>
-            <a className="text-blue-600" href="https://iiitn.ac.in/Downloads/tnp/SEMESTER%20INTERNSHIP%20EVALUATION%20-%20BATCH%202021.pdf">📕 Semester Internship Evaluation Guidelines (Click Here)</a>
+            <a className="text-blue-600" href="SEMESTER INTERNSHIP EVALUATION.pdf">📕 Semester Internship Evaluation Guidelines (Click Here)</a>
           </Button>
         </div>
       </CardContent>

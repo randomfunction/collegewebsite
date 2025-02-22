@@ -4,19 +4,19 @@ import { Card, CardContent } from "@/components/ui/card";
 const documents = [
   {
     title: "Internship Application Form",
-    link: "https://iiitn.ac.in/Downloads/internship/newformat2025/1_Application_Form_for_Internship_Program.pdf",
+    link: "1_Application_Form_for_Internship_Program.pdf",
   },
   {
     title: "Internship Joining Application",
-    link: "https://iiitn.ac.in/Downloads/internship/newformat2025/2_Internship_Joining_Application.pdf",
+    link: "2_Internship_Joining_Application.pdf",
   },
   {
     title: "Internship Report Submission Guideline",
-    link: "https://iiitn.ac.in/Downloads/internship/newformat2025/3_Internship_Report_Submission_Guidelines.docx",
+    link: "3_Internship_Report_Submission_Guidelines.docx",
   },
   {
     title: "Internship Evaluation Form",
-    link: "https://iiitn.ac.in/Downloads/internship/newformat2025/4_Internship_Evaluation_Form.pdf",
+    link: "4_Internship_Evaluation_Form.pdf",
   },
 ];
 
