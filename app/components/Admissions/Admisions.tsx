@@ -20,7 +20,7 @@ export default function Admissions() {
             <CardContent>
               <p className="text-lg text-gray-700">B.Tech Admissions (CSE/ECE) 2024-25:</p>
               <Button variant="link" asChild>
-                <Link href="https://iiitn.ac.in/admission_new.php" target="_blank">
+                <Link href="./components/Admissions/Format.tsx" target="_blank">
                   Visit Admission Page <ExternalLink className="ml-1 w-5 h-5" />
                 </Link>
               </Button>
