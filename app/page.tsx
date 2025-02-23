@@ -12,24 +12,23 @@ import Placement from "./components/Placement";
 import Programs from "./components/Programs";
 
 
-
 export default function Home() {
   return (
     <div> 
        {/* <Placement/>  */}
       {/* <Admissions/> */}
       {/* <Formats/> */}
-      {/* Programs */}
+      {/* <Programs/> */}
       {/* <AcademicEvents/> */}
-      {/* <Programs/>  */}
+      <Programs/> 
       {/* <Doctoral/> */}
-      <Fees/>
+      {/* <Fees/>
       <RuleBook/>
       <PastYear/>
       <Loan/>
       <ScholarshipsPage/>
       <GuestHouseInfo/>
-      <ContactAdmission/>
+      <ContactAdmission/> */}
     </div>
   );
 }
